@@ -7,7 +7,7 @@
     "resource": [
       { "files": ["images/**"] }
     ],
-    "output": "_site",
+    "output": "docs",
     "template": ["default", "template"],
     "globalMetadata": {
       "_appTitle": "SC365 Docs",
