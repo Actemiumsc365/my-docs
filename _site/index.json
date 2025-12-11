@@ -11,7 +11,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | sc365knowledgebase",
-    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Welcome to SC365 Docs | sc365knowledgebase",
+    "summary": "Welcome to SC365 Docs The ultimate knowledge base for our operations. Fast, secure, and easy to use. \uD83D\uDE80 Quick Start Get up and running with the basics of our platform in less than 5 minutes. ⚡ API Reference Detailed endpoints and parameters for developers integrating with our system. \uD83D\uDCDA Architecture Deep dive into the system design, database schemas, and workflows. \uD83D\uDEE0 Troubleshooting Common issues, error codes, and how to resolve them quickly. Why this platform? Note: This documentation is automatically generated and deployed via GitHub Actions. We built this platform to unify our data streams. It supports high-concurrency, real-time updates, and seamless integration with existing industrial tools."
   }
 }
