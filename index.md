@@ -5,12 +5,12 @@ The ultimate knowledge base for our operations. Fast, secure, and easy to use.
 
 <div class="hero-grid">
 
-<a href="docs/introduction.html" class="card" style="text-decoration: none; color: inherit;">
+<a href="docs/introduction.md" class="card" style="text-decoration: none; color: inherit;">
 <h3>🚀 Quick Start</h3>
 <p>Get up and running with the basics of our platform in less than 5 minutes.</p>
 </a>
 
-<a href="api/index.html" class="card" style="text-decoration: none; color: inherit;">
+<a href="api/index.md" class="card" style="text-decoration: none; color: inherit;">
 <h3>⚡ API Reference</h3>
 <p>Detailed endpoints and parameters for developers integrating with our system.</p>
 </a>
