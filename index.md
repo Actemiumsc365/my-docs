@@ -5,7 +5,7 @@ The ultimate knowledge base for our operations. Fast, secure, and easy to use.
 
 <div class="hero-grid">
 
-<a href="docs/intro.html" class="card" style="text-decoration: none; color: inherit;">
+<a href="docs/introduction.html" class="card" style="text-decoration: none; color: inherit;">
 <h3>🚀 Quick Start</h3>
 <p>Get up and running with the basics of our platform in less than 5 minutes.</p>
 </a>

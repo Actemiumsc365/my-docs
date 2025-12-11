@@ -33,9 +33,9 @@
     ],
     "output": "_site",
     "template": [
-      "default",
-      "template"
-    ],
+  "default",
+  "template"
+],
     "globalMetadata": {
       "_appName": "sc365knowledgebase",
       "_appTitle": "sc365knowledgebase",

@@ -1,4 +1,9 @@
 {
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "API Reference | sc365knowledgebase",
+    "summary": "API Reference This is where your technical API documentation will live."
+  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started | sc365knowledgebase",
@@ -6,8 +11,8 @@
   },
   "docs/introduction.html": {
     "href": "docs/introduction.html",
-    "title": "Introduction | sc365knowledgebase",
-    "summary": "Introduction"
+    "title": "Quick Start | sc365knowledgebase",
+    "summary": "Quick Start Welcome to the documentation! Here is how to get started."
   },
   "index.html": {
     "href": "index.html",
