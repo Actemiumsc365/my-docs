@@ -1,22 +1,32 @@
 {
+  "Components/getting-started.html": {
+    "href": "Components/getting-started.html",
+    "title": "Getting Started | SC365 Docs",
+    "summary": "Getting Started"
+  },
+  "Components/introduction.html": {
+    "href": "Components/introduction.html",
+    "title": "Introduction | SC365 Docs",
+    "summary": "Introduction"
+  },
+  "Modules/getting-started.html": {
+    "href": "Modules/getting-started.html",
+    "title": "Getting Started | SC365 Docs",
+    "summary": "Getting Started"
+  },
+  "Modules/introduction.html": {
+    "href": "Modules/introduction.html",
+    "title": "Introduction | SC365 Docs",
+    "summary": "Introduction"
+  },
   "api/index.html": {
     "href": "api/index.html",
     "title": "API Reference | SC365 Docs",
     "summary": "API Reference This is where your technical API documentation will live."
   },
-  "docs/getting-started.html": {
-    "href": "docs/getting-started.html",
-    "title": "Getting Started | SC365 Docs",
-    "summary": "Getting Started"
-  },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
-    "title": "Quick Start | SC365 Docs",
-    "summary": "Quick Start Welcome to the documentation! Here is how to get started."
-  },
   "index.html": {
     "href": "index.html",
-    "title": "Welcome to SC365 Docs | SC365 Docs",
-    "summary": "Welcome to SC365 Docs The ultimate knowledge base for our operations. Fast, secure, and easy to use. \uD83D\uDE80 Quick Start Get up and running with the basics of our platform in less than 5 minutes. ⚡ API Reference Detailed endpoints and parameters for developers integrating with our system. \uD83D\uDCDA Architecture Deep dive into the system design, database schemas, and workflows. \uD83D\uDEE0 Troubleshooting Common issues, error codes, and how to resolve them quickly. Why this platform? Note: This documentation is automatically generated and deployed via GitHub Actions. We built this platform to unify our data streams. It supports high-concurrency, real-time updates, and seamless integration with existing industrial tools."
+    "title": "Home | SC365 Docs",
+    "summary": "Welcome to SC365 Discover your path Whether you are starting from scratch or scaling up, our documentation provides the architecture, APIs, and guides you need. Start learning Explore API \uD83D\uDE80 Quick Start Get up and running in minutes. Learn how to install the CLI, configure your environment, and deploy your first module. Start tutorial → ⚡ API Reference Complete documentation for all endpoints. Includes authentication, request parameters, and response examples. View endpoints → \uD83D\uDEE0 Architecture Understand the system design. Deep dive into microservices, database schema, and data flow diagrams. View diagrams →"
   }
 }

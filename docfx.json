@@ -1,16 +1,24 @@
 {
-  "metadata": [],
+  "metadata": [
+    { 
+      "src": [ { "files": ["**/*.md", "**/*.yml"], "exclude": ["**/_site/**", "**/docs/**"] } ],
+      "dest": "api"
+    }
+  ],
   "build": {
     "content": [
-      { "files": ["**/*.md", "**/*.yml"], "exclude": ["_site/**", "template/**"] }
+      { "files": ["**/*.md", "**/*.yml"], "exclude": ["_site/**", "docs/**", "template/**"] },
+      { "files": ["toc.yml"] }
     ],
     "resource": [
-      { "files": ["images/**"] }
+      { "files": ["images/**"] },
+      { "files": ["SC365.png"] }  
     ],
     "output": "docs",
     "template": ["default", "template"],
     "globalMetadata": {
       "_appTitle": "SC365 Docs",
+      "_appLogoPath": "SC365.png",
       "_enableSearch": true
     }
   }

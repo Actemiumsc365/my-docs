@@ -1,9 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-:root { --primary-color: #2563eb; --text-color: #0f172a; --bg-color: #ffffff; }
-body { font-family: 'Inter', sans-serif; color: var(--text-color); background: var(--bg-color); }
-.navbar { background: rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; }
-.navbar-brand { color: #000 !important; font-weight: 800; }
-article h1 { background: -webkit-linear-gradient(45deg, #2563eb, #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem; margin-bottom: 1.5rem; }
-.card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; transition: all 0.2s; }
-.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: #2563eb; }
-.hero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+/* FORCE LOAD: Microsoft Fluent Design System */
+:root {
+  --ms-blue: #0078d4;
+  --ms-blue-hover: #106ebe;
+  --ms-black: #171717;
+  --ms-gray-10: #f3f2f1;
+  --ms-white: #ffffff;
+  --ms-border: #e1dfdd;
+  --shadow-card: 0 1.6px 3.6px 0 rgba(0,0,0,0.13), 0 0.3px 0.9px 0 rgba(0,0,0,0.11);
+  --shadow-hover: 0 6.4px 14.4px 0 rgba(0,0,0,0.13), 0 1.2px 3.6px 0 rgba(0,0,0,0.11);
+  --container-width: 1248px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--ms-black);
+  background-color: var(--ms-white);
+  line-height: 1.5;
+  margin: 0;
+}
+
+a { color: var(--ms-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- NAVBAR STYLES --- */
+.navbar {
+  background: var(--ms-white) !important;
+  border-bottom: 1px solid var(--ms-border);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: var(--ms-black) !important;
+  font-size: 18px;
+}
+
+/* Menu Links Default */
+.navbar-nav > li > a {
+  color: var(--ms-black) !important;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 12px;
+  transition: color 0.1s ease;
+  outline: none; /* Remove default browser outline */
+}
+
+/* --- THE FIX: ALL INTERACTION STATES ARE BLUE --- */
+/* Hover (Mouse over) */
+.navbar-nav > li > a:hover {
+  color: var(--ms-blue) !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+/* Focus (Clicked / Selected via Keyboard) */
+.navbar-nav > li > a:focus {
+  color: var(--ms-blue) !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+/* Active (Current Page loaded) */
+.navbar-nav > li.active > a,
+.navbar-nav > li > a.active {
+  color: var(--ms-blue) !important;
+  font-weight: 600 !important;
+  background-color: transparent !important;
+}
+
+/* HERO SECTION */
+.ms-hero {
+  background: radial-gradient(circle at 10% 10%, rgb(249, 249, 249) 0%, rgb(240, 242, 245) 90%);
+  padding: 80px 24px 60px;
+  border-bottom: 1px solid var(--ms-border);
+  margin-top: -20px; 
+  margin-bottom: 48px;
+}
+
+.hero-container { max-width: var(--container-width); margin: 0 auto; }
+.hero-title { font-size: 42px; font-weight: 700; margin-bottom: 16px; margin-top: 0; }
+.hero-desc { font-size: 20px; max-width: 600px; margin-bottom: 32px; }
+
+/* BUTTONS */
+.btn-fluent {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin-right: 12px;
+}
+.btn-primary { background-color: var(--ms-blue); color: white !important; }
+.btn-secondary { background-color: white; color: var(--ms-black) !important; border-color: var(--ms-black); }
+
+/* GRID & CARDS */
+.ms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+.learn-card {
+  background: white;
+  border: 1px solid var(--ms-border);
+  border-radius: 8px;
+  padding: 24px;
+  display: block;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-card);
+}
+.learn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  text-decoration: none;
+  border-color: var(--ms-blue);
+}
+.card-title { font-size: 20px; font-weight: 600; color: var(--ms-blue); margin: 16px 0 8px; }
+.card-text { font-size: 14px; color: #605e5c; }
+.card-icon { font-size: 24px; background: #f3f2f1; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 8px; }

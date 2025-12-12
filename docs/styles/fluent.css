@@ -1,0 +1,214 @@
+/* TRUE FLUENT DESIGN SYSTEM - HIGH FIDELITY */
+:root {
+  /* Core Palette */
+  --ms-blue: #0078d4;
+  --ms-blue-hover: #106ebe;
+  --ms-blue-active: #005a9e;
+  --ms-black: #171717;
+  --ms-gray-90: #323130;
+  --ms-gray-60: #605e5c;
+  --ms-gray-10: #f3f2f1; /* Hero Background */
+  --ms-white: #ffffff;
+  --ms-border: #e1dfdd;
+
+  /* Fluent Depth (Exact Shadows) */
+  --shadow-card: 0 1.6px 3.6px 0 rgba(0,0,0,0.13), 0 0.3px 0.9px 0 rgba(0,0,0,0.11);
+  --shadow-hover: 0 6.4px 14.4px 0 rgba(0,0,0,0.13), 0 1.2px 3.6px 0 rgba(0,0,0,0.11);
+  --shadow-flyout: 0 8px 16px rgba(0,0,0,0.14);
+
+  /* Spacing */
+  --container-width: 1248px; /* Standard MS Learn Width */
+}
+
+/* 1. Global Reset & Typography */
+body {
+  font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  color: var(--ms-black);
+  background-color: var(--ms-white);
+  line-height: 1.5;
+  font-size: 16px; /* Base size for readability */
+}
+
+a { color: var(--ms-blue); text-decoration: none; }
+a:hover { color: var(--ms-blue-active); text-decoration: underline; }
+
+/* 2. Navbar Overhaul (Force White & Clean) */
+.navbar {
+  background: var(--ms-white) !important;
+  border-bottom: 1px solid var(--ms-border);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: var(--ms-black) !important;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav > li > a {
+  color: var(--ms-black) !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* 3. The Hero Section (The "Microsoft" Gradient Look) */
+.ms-hero {
+  background: radial-gradient(circle at 10% 10%, rgb(249, 249, 249) 0%, rgb(240, 242, 245) 90%);
+  padding: 80px 24px 60px;
+  border-bottom: 1px solid var(--ms-border);
+  margin-top: -20px; /* Pull up to navbar */
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--ms-gray-60);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--ms-black);
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.hero-desc {
+  font-size: 20px;
+  color: var(--ms-black);
+  max-width: 600px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* 4. Action Buttons (Fluent Style) */
+.btn-fluent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px; /* Fluent modern radius */
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  background-color: var(--ms-blue);
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.btn-primary:hover {
+  background-color: var(--ms-blue-hover);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+  background-color: var(--ms-white);
+  color: var(--ms-black) !important;
+  border-color: var(--ms-black);
+}
+.btn-secondary:hover {
+  background-color: var(--ms-gray-10);
+  text-decoration: none;
+}
+
+/* 5. The Card Grid (Microsoft Learn Style) */
+.ms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.learn-card {
+  background: var(--ms-white);
+  border: 1px solid var(--ms-border);
+  border-radius: 8px; /* Modern rounded corners */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+  box-shadow: var(--shadow-card);
+  text-decoration: none !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: transparent;
+}
+
+/* Left colored accent bar on hover */
+.learn-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--ms-blue);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.learn-card:hover::before { opacity: 1; }
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--ms-gray-10);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 24px; /* For emoji fallback */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ms-blue);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: var(--ms-gray-60);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.card-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ms-blue);
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

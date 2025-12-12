@@ -1,36 +1,50 @@
-# Welcome to SC365 Docs
-The ultimate knowledge base for our operations. Fast, secure, and easy to use.
-
+---
+title: Home
 ---
 
-<div class="hero-grid">
+<div class="ms-hero">
+  <div class="hero-container">
+    <span class="hero-eyebrow">Welcome to SC365</span>
+    <h1 class="hero-title">Discover your path</h1>
+    <p class="hero-desc">
+      Whether you are starting from scratch or scaling up, our documentation provides the architecture, APIs, and guides you need.
+    </p>
+    <div style="display: flex; gap: 12px;">
+      <a href="docs/getting-started.html" class="btn-fluent btn-primary">Start learning</a>
+      <a href="api/index.html" class="btn-fluent btn-secondary">Explore API</a>
+    </div>
+  </div>
+</div>
 
-<a href="docs/introduction.md" class="card" style="text-decoration: none; color: inherit;">
-<h3>🚀 Quick Start</h3>
-<p>Get up and running with the basics of our platform in less than 5 minutes.</p>
-</a>
+<div class="ms-grid">
 
-<a href="api/index.md" class="card" style="text-decoration: none; color: inherit;">
-<h3>⚡ API Reference</h3>
-<p>Detailed endpoints and parameters for developers integrating with our system.</p>
-</a>
+  <a href="docs/getting-started.html" class="learn-card">
+    <div class="card-icon" style="color: #0078d4; background: #e0f2ff;">🚀</div>
+    <div class="card-title">Quick Start</div>
+    <div class="card-text">
+      Get up and running in minutes. Learn how to install the CLI, configure your environment, and deploy your first module.
+    </div>
+    <div class="card-link">Start tutorial →</div>
+  </a>
 
-<a href="#" class="card" style="text-decoration: none; color: inherit;">
-<h3>📚 Architecture</h3>
-<p>Deep dive into the system design, database schemas, and workflows.</p>
-</a>
+  <a href="api/index.html" class="learn-card">
+    <div class="card-icon" style="color: #9c27b0; background: #f9e6ff;">⚡</div>
+    <div class="card-title">API Reference</div>
+    <div class="card-text">
+      Complete documentation for all endpoints. Includes authentication, request parameters, and response examples.
+    </div>
+    <div class="card-link">View endpoints →</div>
+  </a>
 
-<a href="#" class="card" style="text-decoration: none; color: inherit;">
-<h3>🛠 Troubleshooting</h3>
-<p>Common issues, error codes, and how to resolve them quickly.</p>
-</a>
+  <a href="#" class="learn-card">
+    <div class="card-icon" style="color: #009688; background: #e0f2f1;">🛠</div>
+    <div class="card-title">Architecture</div>
+    <div class="card-text">
+      Understand the system design. Deep dive into microservices, database schema, and data flow diagrams.
+    </div>
+    <div class="card-link">View diagrams →</div>
+  </a>
 
 </div>
 
-<br/>
-
-## Why this platform?
-
-> **Note:** This documentation is automatically generated and deployed via GitHub Actions.
-
-We built this platform to unify our data streams. It supports **high-concurrency**, **real-time updates**, and **seamless integration** with existing industrial tools.
+<br><br>
